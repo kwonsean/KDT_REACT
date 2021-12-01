@@ -1,7 +1,7 @@
 import React from 'react'
 import { Col, Input, Label, Row } from 'reactstrap'
 
-function Item({ item }) {
+function Item({ item, onClick }) {
   return (
     <Row>
       <Col sm='4'>
@@ -14,13 +14,7 @@ function Item({ item }) {
       </Col>
       <Col sm='4'>
         <Label>기능</Label>
-        <Input
-          type='button'
-          value='담기'
-          onClick={() => {
-            console.log('clike')
-          }}
-        />
+        <Input type='button' value='담기' onClick={onClick} />
       </Col>
     </Row>
   )
