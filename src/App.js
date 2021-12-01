@@ -1,11 +1,19 @@
 import 'bootstrap/dist/css/bootstrap.css'
-import { Container } from 'reactstrap'
+import { Col, Container, Row } from 'reactstrap'
+import BuyList from './components/BuyList'
 import ItemList from './components/ItemList'
 
 function App() {
   return (
     <Container>
-      <ItemList />
+      <Row>
+        <Col xs='6'>
+          <ItemList />
+        </Col>
+        <Col xs='6'>
+          <BuyList />
+        </Col>
+      </Row>
     </Container>
   )
 }
