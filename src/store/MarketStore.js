@@ -26,8 +26,8 @@ class MarketStore {
       if (item.name === buyName) foundItemIndex = index
     })
 
-    // 이미 buyList에 담겨있는 요소라면 그 요소를 찾아 count만 올려주고
-    // 담겨있지 않다면 새로 push해준다.
+    // 이미 buyList에 담겨있는 요소라면 => (count가 1이상일 것이다!) 그 요소를 찾아 count만 올려주고
+    // 담겨있지 않다면 count += 1 해주고 요소를 새로 push해준다.
     if (this.itemList[foundItemIndex].count > 0) {
       this.buyList.forEach((item, index) => {
         if (item.name === buyName) foundItemIndexInBuyList = index

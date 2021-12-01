@@ -7,9 +7,9 @@ import MarketStore from './store/MarketStore'
 const marketstore = new MarketStore()
 
 function App() {
-  console.log(marketstore)
+  // console.log(marketstore)
   return (
-    <Container>
+    <Container style={{ paddingTop: 30 }}>
       <Row>
         <Col md='6'>
           <ItemList marketstore={marketstore} />
