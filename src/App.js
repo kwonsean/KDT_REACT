@@ -11,11 +11,11 @@ function App() {
   return (
     <Container>
       <Row>
-        <Col xs='6'>
+        <Col md='6'>
           <ItemList marketstore={marketstore} />
         </Col>
-        <Col xs='6'>
-          <BuyList />
+        <Col md='6'>
+          <BuyList marketstore={marketstore} />
         </Col>
       </Row>
     </Container>
