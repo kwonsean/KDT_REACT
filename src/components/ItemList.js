@@ -4,10 +4,10 @@ import Item from './Item'
 
 function ItemList() {
   const itemList = [
-    { name: '새우깡', price: '1300' },
-    { name: '우유', price: '1000' },
-    { name: '허니버터칩', price: '1600' },
-    { name: '바나나킥', price: '1500' },
+    { id: 1, name: '새우깡', price: '1300' },
+    { id: 2, name: '우유', price: '1000' },
+    { id: 3, name: '허니버터칩', price: '1600' },
+    { id: 4, name: '바나나킥', price: '1500' },
   ]
   return (
     <div>
@@ -17,7 +17,7 @@ function ItemList() {
         </CardHeader>
         <CardBody>
           {itemList.map((item) => {
-            return <Item item={item} />
+            return <Item item={item} key={item.id} />
           })}
         </CardBody>
       </Card>
